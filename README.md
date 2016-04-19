@@ -1,9 +1,9 @@
 # Islandora CLAW: Mariadb Docker Image
 
-[![Docker Stars](https://img.shields.io/docker/stars/islandora-claw/mariadb.svg)](https://hub.docker.com/r/islandora-claw/mariadb/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/islandora-claw/mariadb.svg)](https://hub.docker.com/r/islandora-claw/mariadb/)
-[![Image Size](https://img.shields.io/imagelayers/image-size/islandora-claw/mariadb/latest.svg)](https://imagelayers.io/?images=islandora-claw/mariadb:latest)
-[![Image Layers](https://img.shields.io/imagelayers/layers/islandora-claw/mariadb/latest.svg)](https://imagelayers.io/?images=islandora-claw/mariadb:latest)
+[![Docker Stars](https://img.shields.io/docker/stars/islandora/claw-mariadb.svg)](https://hub.docker.com/r/islandora/claw-mariadb/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/islandora/claw-mariadb.svg)](https://hub.docker.com/r/islandora/claw-mariadb/)
+[![Image Size](https://img.shields.io/imagelayers/image-size/islandora/claw-mariadb/latest.svg)](https://imagelayers.io/?images=islandora/claw-mariadb:latest)
+[![Image Layers](https://img.shields.io/imagelayers/layers/islandora/claw-mariadb/latest.svg)](https://imagelayers.io/?images=islandora/claw-mariadb:latest)
 
 ### Introduction
 
@@ -21,7 +21,7 @@ No additional build arguments are provided.
 
 **Example:**
 ```bash
-docker build -t islandora-claw/mariadb .
+docker build -t islandora/claw-mariadb .
 ```
 
 ### Environment Variables
@@ -36,7 +36,7 @@ Please consult the
 
 **Example (foreground, port 3306, auto-remove):**
 ```bash
-docker run --rm -ti -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=password" islandora-claw/mariadb
+docker run --rm -ti -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=password" islandora/claw-mariadb
 ```
 
 Do note that none of the variables above will have any effect if you start
