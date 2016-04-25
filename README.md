@@ -2,20 +2,18 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/islandora/claw-mariadb.svg)](https://hub.docker.com/r/islandora/claw-mariadb/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/islandora/claw-mariadb.svg)](https://hub.docker.com/r/islandora/claw-mariadb/)
-[![Image Size](https://img.shields.io/imagelayers/image-size/islandora/claw-mariadb/latest.svg)](https://imagelayers.io/?images=islandora/claw-mariadb:latest)
-[![Image Layers](https://img.shields.io/imagelayers/layers/islandora/claw-mariadb/latest.svg)](https://imagelayers.io/?images=islandora/claw-mariadb:latest)
 
-### Introduction
+## Introduction
 
 Defines the MariaDB Docker image.
 
 Based on the [Base Docker Image](https://github.com/Islandora-CLAW/docker-base).
 
-### Includes
+## Includes
 
 * MariaDB
 
-### Build Arguments
+## Build Arguments
 
 No additional build arguments are provided.
 
@@ -24,7 +22,7 @@ No additional build arguments are provided.
 docker build -t islandora/claw-mariadb .
 ```
 
-### Environment Variables
+## Environment Variables
 
 | Variable            | Required | Default |
 |---------------------|----------|---------|
@@ -39,10 +37,9 @@ Please consult the
 docker run --rm -ti -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=password" islandora/claw-mariadb
 ```
 
-Do note that none of the variables above will have any effect if you start
-the container with a data directory that already contains a database.
+Do note that none of the variables above will have any effect if you start the container with a data directory that already contains a database.
 
-### Maintainers/Sponsors
+## Maintainers/Sponsors
 
 * UPEI
 * discoverygarden inc.
@@ -59,21 +56,14 @@ the container with a data directory that already contains a database.
 Current maintainers:
 
 * [Nigel Banks](https://github.com/nigelgbanks)
+* [Nick Ruest](https://github.com/ruebot)
 
-### Development
+## Development
 
-If you would like to contribute, please get involved with the
-[Islandora Fedora 4 Interest Group](https://github.com/Islandora/Islandora-Fedora4-Interest-Group).
-We love to hear from you!
+If you would like to contribute, please get involved by attending our weekly [Tech Call](https://github.com/Islandora-CLAW/CLAW/wiki). We love to hear from you!
 
-If you would like to contribute code to the project, you need to be covered by
-an Islandora Foundation
-[Contributor License Agreement](http://islandora.ca/sites/default/files/islandora_cla.pdf)
-or
-[Corporate Contributor Licencse Agreement](http://islandora.ca/sites/default/files/islandora_ccla.pdf).
-Please see the [Contributors](http://islandora.ca/resources/contributors) pages
-on Islandora.ca for more information.
+If you would like to contribute code to the project, you need to be covered by an Islandora Foundation [Contributor License Agreement](http://islandora.ca/sites/default/files/islandora_cla.pdf) or [Corporate Contributor Licencse Agreement](http://islandora.ca/sites/default/files/islandora_ccla.pdf). Please see the [Contributors](http://islandora.ca/resources/contributors) pages on Islandora.ca for more information.
 
-### License
+## License
 
-[GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
+[MIT](https://opensource.org/licenses/MIT)
